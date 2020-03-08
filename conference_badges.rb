@@ -21,7 +21,7 @@ return list_with_room
 end
 
 def printer(array_name)
-  array_name.each {|attendee| puts batch_badge_creator.each}
-  array_name.each {|attendee, room| puts assign_rooms.each}
+  batch_badge_creator(array_name).each {|attendee| puts "#{attendee}"}
+  assign_rooms(array_name).each {|room| puts "#{room}"}
 end
 
